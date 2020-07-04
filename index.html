@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyWeb</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script type="text/javascript">
+  	document.addEventListener("mousemove", function(e){
+  		var body = document.querySelector('body');
+  		var heart = document.createElement("span");
+  		var x = e.offsetX;
+  		var y = e.offsetY;
+  		heart.style.left = x+'px';
+  		heart.style.top = y+'px';
+  		var size = Math.random() * 100;
+  		heart.style.width = 20 + size+'px';
+  		heart.style.height = 20 + size+'px';
+  		body.appendChild(heart);
+
+      setTimeout(function(){
+        heart.remove();
+      },2000)
+  	})
+  </script>
+<h1 class="glow"> this is my website</h1>
+<!-- gdfd -->
+<div class="hero-image">
+	<div class="hero-text">
+	  <h1 style="font-size:50px">I am PK</h1>
+	  <h3>And I'm a wEb DesIgneR</h3><a href="contact.html">
+	  <button>Hire me</button></a>
+	</div>
+  </div>
+
+</body>
+</html>
